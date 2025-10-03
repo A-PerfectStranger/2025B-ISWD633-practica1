@@ -25,7 +25,10 @@ docker run -d --name <nombre contenedor> -p <puerto host 01>:<puerto contenedor 
 ```
 
 Crear un contenedor a partir de la imagen rabbitmq version management-alpine, para este mapeo de puertos usar en el host los mismos puertos del contenedor.
-# COMPLETAR
+
+```
+docker run -P -d --name srv-web rabbitmq:management-alpine
+```
 
 ### Usando una forma más semántica cuando se especifican puertos
 
@@ -43,7 +46,9 @@ docker run -P -d --name <nombre contenedor> <nombre imagen>:<tag>
 No puedes mapear puertos a un contenedor existente directamente después de su creación con Docker. El mapeo de puertos debe especificarse en el momento de crear y ejecutar el contenedor.
 
 ### Crear contenedor de Jenkins puertos contenedor: 8080 (interface web) y 50000 (comunicación entre nodos) imagen: jenkins/jenkins:alpine3.18-jdk11
-# COMPLETAR
+```
+docker run -d --name srv -p 8080:8080 -p 50000:50000 jenkins/jenkins:alpine3.18-jdk11
+```
 
 # COLOCAR UNA CAPTURA DE PANTALLA  DEL ACCESO http://localhost:8080
 
