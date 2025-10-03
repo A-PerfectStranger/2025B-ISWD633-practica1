@@ -14,13 +14,20 @@ docker pull <nombre imagen>:<tag>
 ```
 
 Descargar la imagen **hello-world**
-# COMPLETAR
+
+```
+docker pull hello-world
+```
 
 **¿Qué es nginx**
-# COMPLETAR 
+
+Nginx ​ es un servidor web/Proxy inverso ligero de alto rendimiento y un proxy para protocolos de correo electrónico.​​ Es software libre y de código abierto, licenciado bajo la Licencia BSD simplificada; también existe una versión comercial distribuida bajo el nombre de Nginx Plus.​
 
 Descargar la imagen  **nginx** en la versión **alpine**
-# COMPLETAR
+
+```
+docker pull nginx:alpine
+```
 
 ### Listar imágenes
 
@@ -28,7 +35,7 @@ Descargar la imagen  **nginx** en la versión **alpine**
 docker images
 ```
 
-# COLOCAR UNA CAPTURA DE PANTALLA DEL RESULTADO 
+![Listado imagenes](captura.jpg)
 
 **Identificadores**
 
